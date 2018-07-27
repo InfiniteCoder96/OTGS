@@ -1,0 +1,63 @@
+.main-banner-img #slide-in {
+    position: relative;
+    height: 480px;
+    background-position: center 40px;
+}
+
+
+
+
+  .final-bottom{
+    padding-left: 5%;
+    padding-right: 5%; 
+  }
+  .left-b{
+    position: absolute;
+    width: 75%;
+    left: 0;
+    padding-left: 10%;
+  }
+
+  .right-b{
+    margin-top: 10px;
+    margin-right: 5%;
+    margin-left: 25px;
+    position: absolute;
+    width: 18%;
+    right: 0;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .map-b{
+    position: absolute;
+    padding-top: 25%;
+    padding-left: 10%;
+  }
+
+ .img-gly{
+  position: absolute;
+  padding-top: 25%;
+  right: 0;
+  width: 25%;
+ }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}

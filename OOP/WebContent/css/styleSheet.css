@@ -1,0 +1,367 @@
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.side_menuss {
+	position: fixed;
+	width: 250px;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	background-color: rgba(17, 17, 17, 0.9);
+	opacity: 0.9;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+.mybackground {
+	background: url(images/bokeh-lights-298307_960_720.jpg);
+}
+
+.customDiv {
+	padding-top: 10px;
+	background-color: transparent;
+	text-align: center;
+	font-size: Large;
+}
+
+.text-block {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	background-color: rgba(178, 190, 181, 0.5);
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.search {
+	width: 500px;
+	box-sizing: border-box;
+	border: 2px solid white;
+	border-radius: 4px;
+	font-size: 16px;
+	color: white;
+	background-color: transparent;
+	background-image: url("images/toolbar_find.png");
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 50px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	margin-left: 460px;
+	opacity: 0.8
+}
+
+.search:hover {
+	background-color: chartreuse;
+	color:white;
+}
+
+.search:focus {
+	background-color: transparent;
+	color:chartreuse;
+	width: 800px;
+}
+
+.btns {
+	border: 2px solid white;
+	border-radius: 4px;
+	background-color: transparent;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.nrmlbtn {
+	background-color: transparent;
+}
+
+.sss:focus {
+	border-color: #FF0000;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px
+		rgba(255, 0, 0, 0.6);
+}
+
+button {
+	margin-top: 10px
+}
+
+.paraFontStyle {
+	color: #FFFFFF;
+	text-align: justify;
+}
+
+h3 {
+	color: #F49294
+}
+
+.footer {
+	color: #000000;
+	padding-top: 3px;
+	min-height: 80px;
+	background-color: #2B2B2B;
+}
+
+.jumbtronpad {
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 350px;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: black;
+}
+
+.topnav a {
+	float: right;
+	display: block;
+	color: black;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	text-decoration: none;
+	font-size: 17px;
+	background-color: transparent;
+}
+
+.topnav a:hover {
+	background-color: black;
+	color: brown;
+	height: auto;
+	width: auto;
+}
+
+.topnav a.active {
+	background-color: #2196F3;
+	color: blue;
+}
+
+.topnav .search-container {
+	float: right;
+}
+
+.topnav input[type=text] {
+	padding: 2px;
+	margin-top: 8px;
+	font-size: 17px;
+	margin-bottom: 8px;
+	border: none;
+}
+
+.topnav .search-container button {
+	float: right;
+	margin-top: 5px;
+	margin-right: 8px;
+	background: #5C0DEF;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+	background: #ECC007;
+}
+
+.carousel-content {
+	position: absolute;
+	bottom: 30%;
+	left: 70%;
+	right: 5%;
+	z-index: 20;
+	color: white;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.jumbotron {
+	background-image: url(../images/freddo_slider_example_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+.row>.column {
+	padding: 0 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.containers {
+	position: relative;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	max-height: 180px;
+}
+
+#bx {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.5);
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.containers {
+  position: relative;
+  
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.containers:hover .overlay {
+  opacity: 1;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+	transition: all 0.8s ease-in-out;
+}
+
+.sidenav a, .dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.8s ease-in-out;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 200px; /* Same as the width of the sidenav */
+	font-size: 20px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
+}
+
+.fa-caret-down {
+	float: right;
+	padding-right: 8px;
+}
+
+.pimg {
+	-webkit-transition: all 0.8s ease;
+}
+
+.pimg:hover {
+	transform: scale(1.1);
+}
+
+.text-block {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	background-color: rgba(178, 190, 181, 0.5);
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+form.example input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+}
+
+form.example button {
+	float: left;
+	width: 20%;
+	padding: 10px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+}
+
+form.example button:hover {
+	background: #0b7dda;
+}
+
+form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+}

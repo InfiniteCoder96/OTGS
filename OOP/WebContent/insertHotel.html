@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<div class="container">
+    <form id="contact" action="ReservationHandler" method="get">
+        <h3>Enter your new details</h3>
+        <h4>welcome to Scalar touring</h4>
+        <fieldset>
+            <input name="name" placeholder="Hotel Name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input name="city" placeholder="City" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input name="address" placeholder="Address" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <input name="web" placeholder="Hotel Web Site " type="url" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input name="phone" placeholder="phone number" type="tel" tabindex="5" required>
+        </fieldset>
+        <fieldset>
+            <input name="image" placeholder="image url " type="url" tabindex="6" required>
+        </fieldset>
+        <fieldset>
+            <select name="hotelType">
+                <option value="star">hotel</option>
+                <option value="bunglow">bunglow</option>
+                <option value="home">Home stay</option>
+                <option value="guest">Guest House</option>
+                <option value="bontique">Bontique Hotel</option>
+                <option value="tourism">Tourism Resort</option>
+                <option value="other">Other Hotel</option>
+                <option value="heritage">Haritage Home</option>
+                <option value="apartment">Rented Apartment</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <button name="submit" value="insert" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+        <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Scalar industries">Scalar industries</a></p>
+    </form>
+</div>
+
+</body>
+</html>

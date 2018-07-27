@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scalar Inc 2018</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/nature.css" rel="stylesheet">
+<script defer
+	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/Validate.js"></script>
+
+</head>
+<body class="mybackground">
+
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+
+			</button>
+			<a href="#" class="navbar-brand"><img
+				src="images\tropical (2).png"></a> <a class="navbar-brand"
+				href="#">Scalar Tour Guides</a>
+
+			<div class="navbar-collapse collapse ">
+				<c:choose>
+					<c:when test="${not empty sessionScope.user}">
+						<c:if test="${sessionScope.user == admin}">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="Home.jsp">Home</a></li>
+								<li><a href="#start">News</a></li>
+								<li><a href="About_Us.html">About Us</a></li>
+								<li><a href="Gallery.html">Gallery</a></li>
+								<li><a href="Contact_Us.jsp">Contact</a></li>
+								<a href="http://localhost:8080/OOP/LogOut.jsp"><button
+										class="btn btn-primary btn-sm  " type="button">Sign
+										Out</button></a>&nbsp;&nbsp;&nbsp;
+								<a href="http://localhost:8080/OOP/Admin_Dashboard.jsp"><button
+										class="btn btn-primary btn-sm pull-right" type="button">
+										Hi, ${sessionScope.user}</button></a>
+							</ul>
+						</c:if>
+						<c:if test="${sessionScope.user != admin}">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="Home.jsp">Home</a></li>
+								<li><a href="#start">News</a></li>
+								<li><a href="About_Us.html">About Us</a></li>
+								<li><a href="Gallery.html">Gallery</a></li>
+								<li><a href="Contact_Us.jsp">Contact</a></li>
+								<a href="http://localhost:8080/OOP/LogOut.jsp"><button
+										class="btn btn-primary btn-sm  " type="button">Sign
+										Out</button></a>&nbsp;&nbsp;&nbsp;
+								<a href="http://localhost:8080/OOP/WelcomeUser.jsp"><button
+										class="btn btn-primary btn-sm pull-right" type="button">
+										Hi, ${sessionScope.user}</button></a>
+							</ul>
+						</c:if>
+					</c:when>
+					<c:otherwise>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="Home.jsp">Home</a></li>
+							<li><a href="#start">Join Us</a></li>
+							<li><a href="About_Us.html">About Us</a></li>
+							<li><a href="Gallery.html">Gallery</a></li>
+							<li><a href="Contact_Us.jsp">Contact</a></li>
+							<button class="btn btn-primary btn-sm pull-right "
+								data-toggle="modal" data-target="#loginModal">Sign In</button>
+						</ul>
+					</c:otherwise>
+				</c:choose>
+
+			</div>
+		</div>
+	</nav>
+	<br><br>
+	<div class="head-2">
+		<div class="main-banner-img">
+			<!--			<div class="slide" id="slide" style="background-image: url(http://lankapier.com/srilanka.travel/images/banner/banner2.jpg);">	-->
+
+
+			<div class="slide-in" id="slide-in" alt="banner-img"
+				style="background-image: '">
+				<img src="images/Beach.jpg" width="100%" />
+
+				<div class="final-bottom">
+					<div class="left-b">
+
+						<h3>Beaches</h3>
+
+						<div class="introduction">
+							<p>
+								With nearly 1600 km of of palm fringed Coastline baked to
+								perfection surrounding the country Sri Lanka is the ideal
+								destination for beach bums worldwide. May it be windsurfing,
+								kayaking, yachting, water skiing, scuba diving or jut lazing
+								around for the perfect tan, Sri Lanka offers it all. <br /> <br />
+								The two monsoon winds providing rain to the two corners of the
+								country at various periods, makes Sri Lanka’s beach holiday a
+								year round prospect. The north east winds make the south western
+								coast sunny and the sea calm from November to March. The South
+								West winds make the East Coast waters quiet with the constant
+								sun shine happily in agreement. &nbsp;&nbsp;
+							</p>
+							<p style="text-align: justify;">The best of the Southern
+								beaches include Tangalla, Beruwala, Mirissa, Bentota and
+								Unawatuna with varying options including chic boutique hotels,
+								glowing coral reefs, gentle sandbars and undiscovered corners of
+								paradise.</p>
+							<p style="text-align: justify;">Although Sri Lanka’s southern
+								beaches has been long discovered by the international traveller
+								the east coast is yet to be fully discovered. The most known
+								among the Eastern beaches is the Arugam Bay, the high church of
+								surfing enthusiasts’ in the region. Once a mere rumour, Uppuveli
+								beach is also open to the sun seekers after a three decade long
+								civil war.</p>
+							<p style="text-align: justify;">On the Western corner of the
+								country to the north of Colombo is the Negambo lagoon. Its
+								beaches, an old favourite with local and foreign visitors and
+								lagoon famed for lobster harvesting. Despite having a ring of
+								sandy beaches surrounding the country, Galle Face Green, a half
+								a kilometre stretch between Galle Road and Indian Ocean is the
+								playground of the Colombians.</p>
+						</div>
+					</div>
+
+					<div class="right-b">
+						<h3>Plan Your Visit</h3>
+						<li>Suggested Itineraries</li>
+						<li>Book Your Holiday Now</li>
+						<li>Online Services</li>
+						<li>Travel Agents</li>
+						<li>Accommodation</li>
+						<li>Transport</li>
+						<li>Tour Guides</li>
+						<li>Events</li>
+						<li>Visitor's Say</li>
+						<li>Attractions</li>
+						<li>Contact Us</li>
+
+					</div>
+				</div>
+
+				<div class="map-b">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2222937.427231049!2d80.74920264101597!3d7.822485734591139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1524241487358"
+						width="800" height="650" frameborder="0" style="border: 0"
+						allowfullscreen></iframe>
+				</div>
+
+				<div class="img-gly">
+					<div class="gallery">
+						<a target="_blank" href="images/beach1.jpg"> <img
+							src="images/beach1.jpg" alt="wild1" width="150" height="100">
+						</a>
+
+					</div>
+
+					<div class="gallery">
+						<a target="_blank" href="images/beach2.jpg"> <img
+							src="images/beach2.jpg" alt="wild2" width="150" height="100">
+						</a>
+
+					</div>
+
+					<div class="gallery">
+						<a target="_blank" href="images/beach3.jpg"> <img
+							src="images/beach3.jpg" alt="wild3" width="150" height="100">
+						</a>
+
+					</div>
+
+					<div class="gallery">
+						<a target="_blank" href="images/beach4.jpg"> <img
+							src="images/beach4.jpg" alt="wild4" width="150" height="100">
+						</a>
+
+					</div>
+
+				</div>
+</body>

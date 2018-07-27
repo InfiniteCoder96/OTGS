@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+
+	<!-- Insert an user to the database -->
+	<query id="insert_user">
+        <![CDATA[
+          	insert into user_info (user_id, firstName, lastName, emailAddress, countery, username) values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular user by id -->
+	<query id="user_info_by_id">
+         <![CDATA[        
+            select * from user_info where user_id = ?
+        ]]>
+	</query>
+
+	<!-- Select all users -->
+	<query id="all_user_info">
+         <![CDATA[        
+            select * from user_info
+        ]]>
+	</query>
+
+	<!-- Delete a particular user by id -->
+	<query id="remove_user">
+         <![CDATA[        
+            delete from user_info where user_id = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular user by id -->
+	<query id="update_user_info">
+         <![CDATA[        
+            update employee set firstName = ?, lastName = ?, emailAddress = ?, countery = ?, username = ? where user_id = ?
+        ]]>
+	</query>
+	
+		<!-- Get all user IDs -->
+	<query id="user_ids">
+         <![CDATA[        
+            select user_id from employee
+        ]]>
+	</query>
+
+</Querys>
